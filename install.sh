@@ -2,7 +2,6 @@ git clone https://github.com/cprimera/dotfiles ~/dotfiles
 cd ~/dotfiles
 git submodule init
 git submodule update
-git clone https://gist.github.com/6226629.git
 for i in *
 do
 	if [ "$i" != "README.md" ] && [ "$i" != "install.sh" ] && [ "$i" != "6226629" ]
