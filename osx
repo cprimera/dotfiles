@@ -1,0 +1,168 @@
+#!/usr/bin/env bash
+
+
+
+
+
+defaults write com.apple.systemuiserver menuExtras -array \
+"/System/Library/CoreServices/Menu Extras/Displays.menu" \
+"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+"/System/Library/CoreServices/Menu Extras/Volume.menu" \
+"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+"/System/Library/CoreServices/Menu Extras/Clock.menu"
+
+defaults write com.apple.AppleMultitouchTrackpad QuickActionMenuGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadHandResting -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadHorizScroll -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadMomentumScroll -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadPinch -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRotate -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadScroll -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingersRightClick -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerDoubleTapGesture -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 3
+
+defaults write com.apple.Safari AutoFillCreditCardData -int 0
+defaults write com.apple.Safari AutoFillFromAddressBook -int 0
+defaults write com.apple.Safari AutoFillMiscellaneousForms -int 0
+defaults write com.apple.Safari AutoFillPasswords -int 1
+defaults write com.apple.Safari AutoOpenSafeDownloads -int 0
+defaults write com.apple.Safari HomePage -string "https://www.google.ca/"
+defaults write com.apple.Safari IncludeDevelopMenu -int 1
+defaults write com.apple.Safari SendDoNotTrackHTTPHeader -int 1
+defaults write com.apple.Safari ShowFavoritesBar -int 1
+defaults write com.apple.Safari "ShowFavoritesBar-v2" -int 0
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -int 0
+defaults write com.apple.Safari ShowOverlayStatusBar -int 1
+defaults write com.apple.Safari ShowSidebarInNewWindows -int 0
+defaults write com.apple.Safari ShowSidebarInTopSites -int 0
+defaults write com.apple.Safari ShowStatusBar -int 1
+defaults write com.apple.Safari ShowStatusBarInFullScreen -int 0
+defaults write com.apple.Safari TopSitesGridArrangement -int 1
+
+defaults write com.apple.Terminal "Default Window Settings" -string Visor
+defaults write com.apple.Terminal "Startup Window Settings" -string Visor
+defaults write com.apple.Terminal TotalTerminalAutoSlideOnActivation -int 1
+defaults write com.apple.Terminal TotalTerminalCopyOnSelect -int 0
+defaults write com.apple.Terminal TotalTerminalDoNotLaunchCrashWatcher -int 0
+defaults write com.apple.Terminal TotalTerminalDontCustomizeDockIcon -int 1
+defaults write com.apple.Terminal TotalTerminalHideDockIcon -int 0
+defaults write com.apple.Terminal TotalTerminalLoggingDisabled -int 0
+defaults write com.apple.Terminal TotalTerminalPasteOnRightClick -int 0
+defaults write com.apple.Terminal TotalTerminalPreferencesVersion -int 2
+# defaults write com.apple.Terminal TotalTerminalShortcuts = {
+#     "ToggleVisor" = {
+#         "KeyCode" = 50;
+#         "Modifiers" = 262144;
+#     };
+# };
+TotalTerminalVisorAnimationSpeed -string "0.2"
+TotalTerminalVisorBackgroundAnimationOpacity -int 100
+TotalTerminalVisorEnabled -int 1
+TotalTerminalVisorUseFade -int 0
+TotalTerminalVisorUseSlide -int 1
+# ""Window Settings"" = {
+#     "Visor" = {
+#         "ANSIBlueColor" = <62706c69 73743030 d4010203 04050615 16582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a3 07080f55 246e756c 6cd3090a 0b0c0d0e 554e5352 47425c4e 53436f6c 6f725370 61636556 24636c61 73734630 20302031 00100280 02d21011 12135a24 636c6173 736e616d 65582463 6c617373 6573574e 53436f6c 6f72a212 14584e53 4f626a65 63745f10 0f4e534b 65796564 41726368 69766572 d1171854 726f6f74 80010811 1a232d32 373b4148 4e5b6269 6b6d727d 868e919a acafb400 00000000 00010100 00000000 00001900 00000000 00000000 00000000 0000b6>;
+#         "ANSIBrightBlueColor" = <62706c69 73743030 d4010203 04050615 16582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a3 07080f55 246e756c 6cd3090a 0b0c0d0e 554e5352 47425c4e 53436f6c 6f725370 61636556 24636c61 73734f10 1c302e32 30333431 33353239 3820302e 32303237 30333330 32362031 00100280 02d21011 12135a24 636c6173 736e616d 65582463 6c617373 6573574e 53436f6c 6f72a212 14584e53 4f626a65 63745f10 0f4e534b 65796564 41726368 69766572 d1171854 726f6f74 80010811 1a232d32 373b4148 4e5b6281 83858a95 9ea6a9b2 c4c7cc00 00000000 00010100 00000000 00001900 00000000 00000000 00000000 0000ce>;
+#         "BackgroundBlur" = 0;
+#         "BackgroundColor" = <62706c69 73743030 d4010203 04050615 16582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a3 07080f55 246e756c 6cd3090a 0b0c0d0e 574e5357 68697465 5c4e5343 6f6c6f72 53706163 65562463 6c617373 46302030 2e370010 038002d2 10111213 5a24636c 6173736e 616d6558 24636c61 73736573 574e5343 6f6c6f72 a2121458 4e534f62 6a656374 5f100f4e 534b6579 65644172 63686976 6572d117 1854726f 6f748001 08111a23 2d32373b 4148505d 646b6d6f 747f8890 939caeb1 b6000000 00000001 01000000 00000000 19000000 00000000 00000000 00000000 b8>;
+#         "CursorBlink" = 1;
+#         "CursorColor" = <62706c69 73743030 d4010203 04050615 16582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a3 07080f55 246e756c 6cd3090a 0b0c0d0e 554e5352 47425c4e 53436f6c 6f725370 61636556 24636c61 73734630 20312030 00100280 02d21011 12135a24 636c6173 736e616d 65582463 6c617373 6573574e 53436f6c 6f72a212 14584e53 4f626a65 63745f10 0f4e534b 65796564 41726368 69766572 d1171854 726f6f74 80010811 1a232d32 373b4148 4e5b6269 6b6d727d 868e919a acafb400 00000000 00010100 00000000 00001900 00000000 00000000 00000000 0000b6>;
+#         "CursorType" = 0;
+#         "Font" = <62706c69 73743030 d4010203 04050618 19582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a4 07081112 55246e75 6c6cd409 0a0b0c0d 0e0f1056 4e535369 7a65584e 5366466c 61677356 4e534e61 6d655624 636c6173 73234026 00000000 00001010 80028003 5a416e64 616c654d 6f6e6fd2 13141516 5a24636c 6173736e 616d6558 24636c61 73736573 564e5346 6f6e74a2 1517584e 534f626a 6563745f 100f4e53 4b657965 64417263 68697665 72d11a1b 54726f6f 74800108 111a232d 32373c42 4b525b62 69727476 78838893 9ca3a6af c1c4c900 00000000 00010100 00000000 00001c00 00000000 00000000 00000000 0000cb>;
+#         "FontAntialias" = 0;
+#         "Linewrap" = 1;
+#         "ProfileCurrentVersion" = "2.04";
+#         "SelectionColor" = <62706c69 73743030 d4010203 04050615 16582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a3 07080f55 246e756c 6cd3090a 0b0c0d0e 554e5352 47425c4e 53436f6c 6f725370 61636556 24636c61 73734f10 29302e30 33313337 32353439 30322030 2e323233 35323934 31313820 302e3031 39363037 38343331 34001001 8002d210 1112135a 24636c61 73736e61 6d655824 636c6173 73657357 4e53436f 6c6f72a2 1214584e 534f626a 6563745f 100f4e53 4b657965 64417263 68697665 72d11718 54726f6f 74800108 111a232d 32373b41 484e5b62 8e909297 a2abb3b6 bfd1d4d9 00000000 00000101 00000000 00000019 00000000 00000000 00000000 000000db>;
+#         "TextBoldColor" = <62706c69 73743030 d4010203 04050615 16582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a3 07080f55 246e756c 6cd3090a 0b0c0d0e 554e5352 47425c4e 53436f6c 6f725370 61636556 24636c61 73734630 20312030 00100180 02d21011 12135a24 636c6173 736e616d 65582463 6c617373 6573574e 53436f6c 6f72a212 14584e53 4f626a65 63745f10 0f4e534b 65796564 41726368 69766572 d1171854 726f6f74 80010811 1a232d32 373b4148 4e5b6269 6b6d727d 868e919a acafb400 00000000 00010100 00000000 00001900 00000000 00000000 00000000 0000b6>;
+#         "TextColor" = <62706c69 73743030 d4010203 04050615 16582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a3 07080f55 246e756c 6cd3090a 0b0c0d0e 554e5352 47425c4e 53436f6c 6f725370 61636556 24636c61 73734630 20312030 00100280 02d21011 12135a24 636c6173 736e616d 65582463 6c617373 6573574e 53436f6c 6f72a212 14584e53 4f626a65 63745f10 0f4e534b 65796564 41726368 69766572 d1171854 726f6f74 80010811 1a232d32 373b4148 4e5b6269 6b6d727d 868e919a acafb400 00000000 00010100 00000000 00001900 00000000 00000000 00000000 0000b6>;
+#         "UseBoldFonts" = 0;
+#         "UseBrightBold" = 1;
+#         "VisualBell" = 0;
+#         "name" = Visor;
+#         "shellExitAction" = 1;
+#         "type" = "Window Settings";
+#     };
+# };
+
+
+defaults write com.apple.TextEdit NSNavPanelExpandedStateForSaveMode -int 1
+defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+defaults write com.apple.TextEdit RichText -int 0
+defaults write com.apple.TextEdit ShowRuler -int 0
+
+
+defaults write com.apple.airplay showInMenuBarIfPresent -int 1
+
+defaults write com.apple.calculator "Programmer_InputMode" -int 10
+defaults write com.apple.calculator ViewDefaultsKey -string "Scientific"
+
+defaults write com.apple.dock "expose-group-apps" -int 0
+defaults write com.apple.dock magnification -int 1
+defaults write com.apple.dock "minimize-to-application" -int 1
+defaults write com.apple.dock showAppExposeGestureEnabled -int 1
+defaults write com.apple.dock showMissionControlGestureEnabled -int 1
+defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock "wvous-bl-corner" -int 10
+defaults write com.apple.dock "wvous-bl-modifier" -int 0
+defaults write com.apple.dock "wvous-tl-corner" -int 1
+defaults write com.apple.dock "wvous-tl-modifier" -int 0
+defaults write com.apple.dock "wvous-tr-corner" -int 2
+defaults write com.apple.dock "wvous-tr-modifier" -int 0
+
+defaults write com.apple.dt.Xcode DVTTextEditorWrapsLines -int 1
+defaults write com.apple.dt.Xcode DVTTextIndentUsingTabs -int 1
+defaults write com.apple.dt.Xcode DVTTextShowCodeCoverage -int 1
+defaults write com.apple.dt.Xcode DVTTextShowFoldingSidebar -int 1
+defaults write com.apple.dt.Xcode DVTTextShowInvisibleCharacters -int 0
+defaults write com.apple.dt.Xcode DVTTextShowLineNumbers -int 1
+
+defaults write com.apple.finder \
+'{ "ComputerViewSettings" = { \
+    "CustomViewStyleVersion" = 1; \
+    "WindowState" = { \
+        "ContainerShowSidebar" = 0; \
+        "PreviewPaneVisibility" = 0; \
+        "ShowPathbar" = 1; \
+        "ShowSidebar" = 0; \
+        "ShowStatusBar" = 1; \
+        "ShowTabView" = 0; \
+        "ShowToolbar" = 0; \
+        "SidebarWidth" = 140; \
+        "SidebarWidthTenElevenOrLater" = 140; \
+    }; \
+}; }'
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -int 1
+defaults write com.apple.finder ShowHardDrivesOnDesktop -int 1
+defaults write com.apple.finder ShowMountedServersOnDesktop -int 1
+defaults write com.apple.finder ShowPathbar -int 1
+defaults write com.apple.finder ShowPreviewPane -int 0
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -int 1
+defaults write com.apple.finder ShowSidebar -int 1
+defaults write com.apple.finder ShowStatusBar -int 1
+defaults write com.apple.finder ShowTabView -int 0
+defaults write com.apple.finder SidebarDevicesSectionDisclosedState -int 1
+defaults write com.apple.finder SidebarMediaBrowserSectionDisclosedState -int 1
+defaults write com.apple.finder SidebarSharedSectionDisclosedState -int 1
+
+
+defaults write com.apple.iTunes DeviceBackupsDisabled -int 1
+
+defaults write com.apple.menuextra.battery ShowPercent -bool YES
+
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+defaults write com.lightheadsw.caffeine SuppressLaunchMessage -int 1
