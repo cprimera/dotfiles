@@ -1,8 +1,10 @@
+#!/bin/bash
+
 populate () {
   cd ~/dotfiles
   for i in {zshrc,vimrc,screenrc}
   do
-    ln -s ~/dotfiles/$i ~/.${i}
+    ln -sf ~/dotfiles/$i ~/.${i}
   done
 }
 
@@ -11,11 +13,11 @@ install_ohmyzsh () {
   curl -fsSL https://gist.githubusercontent.com/cprimera/6226629/raw/0e9cd73e48d2a967ead3514aaaba187242eff48b/cprimera.zsh-theme > ~/.oh-my-zsh/themes/cprimera.zsh-theme
 }
 
-if [ "$1" != "--local" ] && [ "$1" != "-l" ]
+if [ ! -d "${HOME}/dotfiles" ]
 then
   git clone https://github.com/cprimera/dotfiles ~/dotfiles
 fi
 
-populate
 install_ohmyzsh
+populate
 brew bundle install
