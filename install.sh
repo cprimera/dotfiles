@@ -15,6 +15,20 @@ install_ohmyzsh () {
   curl -fsSL https://gist.githubusercontent.com/cprimera/6226629/raw/0e9cd73e48d2a967ead3514aaaba187242eff48b/cprimera.zsh-theme > ~/.oh-my-zsh/themes/cprimera.zsh-theme
 }
 
+install_brew () {
+	if [ "`uname -s`" == "Darwin" ]
+	then
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	fi
+}
+
+install_brew_packages () {
+	if command -v brew 2>&1 >/dev/null
+	then
+		brew bundle install
+	fi
+}
+
 if [ ! -d "${HOME}/dotfiles" ]
 then
   git clone https://github.com/cprimera/dotfiles ~/dotfiles
@@ -22,10 +36,8 @@ fi
 
 install_ohmyzsh
 populate
-if command -v brew 2>&1 >/dev/null
-then
-    brew bundle install
-fi
+install_brew
+install_brew_packages
 if [ "`uname -s`" == "Darwin" ]
 then
     ~/dotfiles/osx
