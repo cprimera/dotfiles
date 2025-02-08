@@ -2,10 +2,12 @@
 
 populate () {
   cd ~/dotfiles
-  for i in {zshrc,vimrc,screenrc}
+  for i in {zshrc,vimrc,screenrc,gitconfig}
   do
     ln -sf ~/dotfiles/$i ~/.${i}
   done
+  mkdir -p ~/.config/ghostty
+  ln -sf ~/dotfiles/ghostty.cfg ~/.config/ghostty/config
 }
 
 install_ohmyzsh () {
@@ -20,4 +22,11 @@ fi
 
 install_ohmyzsh
 populate
-brew bundle install
+if command -v brew 2>&1 >/dev/null
+then
+    brew bundle install
+fi
+if [ "`uname -s`" == "Darwin" ]
+then
+    ~/dotfiles/osx
+fi

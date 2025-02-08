@@ -1,0 +1,18 @@
+[user]
+	name = Christopher Primerano
+	email = cprimera@mac.com
+[push]
+	default = current
+[core]
+	excludesfile = /Users/cprimera/.gitignore_global
+[color]
+	ui = auto
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main
+

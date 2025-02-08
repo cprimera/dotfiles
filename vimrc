@@ -7,3 +7,5 @@ set nu
 set ai cin
 set laststatus=2
 syntax enable
+set backspace=indent,eol,start
+set ruler

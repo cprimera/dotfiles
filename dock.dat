@@ -1,0 +1,23 @@
+Siri	file:///System/Applications/Siri.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.siri.launcher
+Launchpad	file:///System/Applications/Launchpad.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.launchpad.launcher
+App Store	file:///System/Applications/App%20Store.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.AppStore
+Safari	file:///Applications/Safari.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.Safari
+Mail	file:///System/Applications/Mail.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.mail
+Calendar	file:///System/Applications/Calendar.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.iCal
+Notes	file:///System/Applications/Notes.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.Notes
+Maps	file:///System/Applications/Maps.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.Maps
+Messages	file:///System/Applications/Messages.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.MobileSMS
+FaceTime	file:///System/Applications/FaceTime.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.FaceTime
+Photos	file:///System/Applications/Photos.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.Photos
+Music	file:///System/Applications/Music.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.Music
+TV	file:///System/Applications/TV.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.TV
+Xcode	file:///Applications/Xcode.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.dt.Xcode
+Visual Studio Code	file:///Applications/Visual%20Studio%20Code.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.microsoft.VSCode
+Terminal	file:///System/Applications/Utilities/Terminal.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.Terminal
+System Preferences	file:///System/Applications/System%20Preferences.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.systempreferences
+Microsoft Remote Desktop	file:///Applications/Microsoft%20Remote%20Desktop.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.microsoft.rdc.macos
+Remote Desktop	file:///Applications/Remote%20Desktop.app/	persistentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.RemoteDesktop
+Activity Monitor	file:///System/Applications/Utilities/Activity%20Monitor.app/	recentApps	/Users/cprimera/Library/Preferences/com.apple.dock.plist	com.apple.ActivityMonitor
+School	file:///Users/cprimera/Dropbox/School/	persistentOthers	/Users/cprimera/Library/Preferences/com.apple.dock.plist	
+Downloads	file:///Users/cprimera/Downloads/	persistentOthers	/Users/cprimera/Library/Preferences/com.apple.dock.plist	
+Documents	file:///Users/cprimera/Documents/	persistentOthers	/Users/cprimera/Library/Preferences/com.apple.dock.plist	
